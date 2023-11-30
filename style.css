@@ -43,11 +43,12 @@ a {
     align-items: center;
 }
 
-.subtitle {
+.preface {
     color: #3A68B8;
     font-size: 18px;
     line-height: 29px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .title {
@@ -64,9 +65,29 @@ a {
     color: #fff;
     width: 558px;
     font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.text-top {
     line-height: 29px;
     font-size: 18px;
-    opacity: 0.7;
+}
+
+.text-card {
+    width: 302px;
+    text-align: center;
+}
+
+.text-card-4 {
+    width: 694px;
+    text-align: center;
+}
+
+.text-margin-ai {
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .header-buttons {
@@ -85,6 +106,10 @@ a {
     font-weight: 600;
 }
 
+.button__ai {
+    font-size: 16px;
+}
+
 .btn-play {
     display: flex;
     align-items: center;
@@ -96,4 +121,79 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.main {
+    padding-top: 157px;
+    padding-bottom: 221px;
+    background: #020A18;
+}
+
+.apply-ai {
+    display: flex;
+    gap: 68px;
+    align-items: center;
+}
+
+.heading {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    margin-top: 264px;
+    display: grid;
+    grid-template-columns: repeat(3, 362px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    gap: 60px;
+}
+
+.card-img {
+    width: 98px;
+}
+
+.card-img-4 {
+    width: 306px;
+}
+
+.subtitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31.25px;
+    opacity: 0.7;
+}
+
+.say-about-us {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 243px;
+}
+
+.say-about-us-info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
