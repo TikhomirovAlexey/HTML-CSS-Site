@@ -30,6 +30,7 @@ img {
     display: flex;
     gap: 40px;
     justify-content: center;
+    align-items: center;
 }
 
 .link {
@@ -62,13 +63,13 @@ img {
     font-size: 55px;
     font-weight: 800;
     line-height: 72px;
-    width: 604px;
+    max-width: 604px;
     color: #fff;
 }
 
 .text {
     color: #fff;
-    width: 558px;
+    max-width: 558px;
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
@@ -98,6 +99,7 @@ img {
 .header-buttons {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -144,7 +146,7 @@ img {
 }
 
 .apply-ai-info {
-    width: 484px;
+    max-width: 484px;
 }
 
 .heading {
@@ -192,7 +194,7 @@ img {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    line-height: 31.25px;
+    line-height: 31px;
     opacity: 0.7;
 }
 
@@ -206,7 +208,7 @@ img {
 }
 
 .say-about-us-info {
-    width: 548px;
+    max-width: 548px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -256,6 +258,8 @@ img {
 
 .footer-list-li-logos {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
@@ -306,4 +310,117 @@ img {
         gap: 64px;
     }
 
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-bottom: 108px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+
+    .header-info {
+        text-align: center;
+    }
+
+    .preface {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .title {
+        margin-top: 16px;
+        margin-bottom: 64px;
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 343px;
+    }
+
+    .text-top {
+        width: 343px;
+    }
+
+    .header-content {
+        margin-top: 64px;
+    }
+
+    .header-buttons {
+        margin-top: 39px;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logos {
+        margin: 128px auto 0;
+        flex-direction: column;
+    }
+
+    .logoipsum-margin {
+        align-self: flex-start;
+    }
+
+
+    .main {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .apply-ai {
+        text-align: center;
+    }
+
+    .cards {
+        margin-top: 96px;
+    }
+
+    .say-about-us {
+        text-align: center;
+        gap: 32px;
+        margin-top: 96px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .footer-subtitle {
+        align-self: center;
+    }
+
+    .footer-about {
+        order: -1;
+    }
+
+    .footer-info, .footer-about, .footer-store {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-store {
+        align-items: center;
+    }
 }
